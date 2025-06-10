@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&L Auckland Residential Painting</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="./assets/gl-painting-2.png">
+    <link rel="stylesheet" href="glpainting.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <div class="home-screen">
+        <div class="top-contact-container">
+          <div class="top-contact-bar">
+            <span>
+              <img 
+                src="assets/email-method.png" 
+                class="icon" 
+              />
+              <a id="emailLink">glpaintingltd@gmail.com</a>
+            </span>
+            <span>
+              <img 
+                src="assets/phone-call.png" 
+                class="icon" 
+              />
+              <a id="phoneLink">+64 21 198 9898</a>
+            </span>
+          </div>
+        </div>
+        <section id="navigation">
+            <header>
+                <nav id="navbar">
+                    <div class="nav-container">
+                        <img src="./assets/gl-painting-2.png" alt="Logo" class="logo" onclick="window.location.href='index.html';">
+                        <div class="hamburger" onclick="toggleMenu()">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+
+                            <div class="mobile-contact-options">
+                                <a href="mailto:glpaintingltd@gmail.com" class="landing-contact-button" aria-label="Send Email">
+                                  <img src="assets/email-method.png" class="icon" alt="Email"s/>
+                                </a>
+                                <a href="tel:+64211989898" class="landing-contact-button" aria-label="Call Phone">
+                                  <img src="assets/phone-call.png" class="icon" alt="Phone"/>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </section>
+
+        <section id="landing">
+            <div class="landing-container">
+              <h2>The Painting Experts</h2>
+              <p class="landing-text">
+                With over 20+ years of experience, our master painters deliver lasting quality and style. Get in touch with us today
+              </p>
+              
+              <div class="button-group">
+                <div class="action-button" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">
+                  <strong>View Services</strong>
+                </div>
+                <div class="action-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+                  <strong>Contact</strong>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+
+
+
+    <!--About page-->
+    <section id="about">
+        <div class="about-container">
+            <h1>About</h1>
+            <div class="text-content">
+                <h2 class="sub-title">Your local experts in residential painting, delivering top-quality interior finishes across Auckland.</h2>
+                <p class="About-section-1">
+                    At G&L Painting, we are dedicated to delivering high-quality interior painting, roof painting, plastering, and gib fixing. With over 22 years of experience and 400+ homes completed, we bring precision to every project. As a Dulux Master Painter and member of Master Painters NZ, we uphold top industry standards. Using premium Dulux products, we ensure a durable finish that protects and enhances your home. Trusted across Auckland, we're ready to bring the same expert service to your next project.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="extra-container">
+        <div class="extra-content">
+        </div>
+    </section>
+
+
+
+
+    <!--Services page-->
+    <section id="services">
+        <div class="services-container">
+          <section class="services-section">
+            <h2 class="services-heading">What We Offer</h2>
+            <p class="services-description-1">
+              At G&L Painting, we provide high-quality interior and exterior painting for new and existing homes. 
+              Using premium Dulux products, we deliver flawless finishes that make your home stand out.
+            </p>
+            <p class="services-description-2">
+               Our experienced team is committed to delivering exceptional, high-quality results, 
+               making us Auckland’s trusted choice for residential painting.
+            </p>
+          </section>
+
+          <div class="services-grid">
+            <!-- INTERIOR PAINTING -->
+            <div class="service">
+              <div class="top-content">
+                <img src="./assets/interior-painting.png" alt="Interior Painting">
+                <h3>INTERIOR<br>PAINTING</h3>
+              </div>
+              <div class="content-hide">
+                <div class="item">Wall Painting</div>
+                <div class="item">Rooms</div>
+                <div class="item">Bathrooms</div>
+              </div>
+              <p class="view-more">View More</p>
+            </div>
+
+
+      
+            <!-- EXTERIOR PAINTING -->
+            <div class="service">
+              <div class="top-content">
+                <img src="./assets/exterior-painting.png" alt="Exterior Painting">
+                <h3>EXTERIOR<br>PAINTING</h3>
+              </div>
+              <div class="content-hide">
+                <div class="item">Fences & Gates</div>
+                <div class="item">Trimming</div>
+                <div class="item">Exterior House Painting</div>
+                <div class="item">Doors & Windowsills</div>
+              </div>
+              <p class="view-more">View More</p>
+            </div>
+      
+            <!-- ROOF PAINTING -->
+            <div class="service">
+              <div class="top-content">
+                <img src="./assets/roof-painting.png" alt="Roof Painting">
+                <h3>ROOF<br>PAINTING</h3>
+              </div>
+              <div class="content-hide">
+                <div class="item">Roof Painting</div>
+                <div class="item">Roof fixing</div>
+                <div class="item">Coating & Repaint</div>
+              </div>
+              <p class="view-more">View More</p>
+            </div>
+      
+            <!-- PLASTERING -->
+            <div class="service">
+              <div class="top-content">
+                <img src="./assets/plastering.png" alt="Plastering">
+                <h3>PLASTERING</h3>
+              </div>
+              <div class="content-hide">
+                <div class="item">Wall Plastering</div>
+                <div class="item">Room plastering & fixing</div>
+                <div class="item">Bathroom plastering</div>
+              </div>
+              <p class="view-more">View More</p>
+            </div>
+      
+            <!-- GIB FIXING -->
+            <div class="service">
+              <div class="top-content">
+                <img src="./assets/gib-fixing.png" alt="Gib Fixing">
+                <h3>GIB<br>FIXING</h3>
+              </div>
+              <div class="content-hide">
+                <div class="item">Gib Board Installation</div>
+                <div class="item">Seam Taping & Jointing</div>
+                <div class="item">Plasterboard & Gib Fixing</div>
+                <div class="item">Ceiling & Wall Installation</div>
+              </div>
+              <p class="view-more">View More</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--Projects Page-->
+    <section id="projects">
+      <div class="projects-container">
+        <h1 class="projects-title">Projects</h1>
+        <p class="project-text">Explore some of our recent projects</p>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <img src="Project-Images/westmere.png" alt="Westmere">
+            <h3>Westmere</h3>
+            <p class="text-mobile-view">Exterior painting to new build <br>in Westmere</p>
+          </div>
+          <div class="individual-text-box-left">
+            <p>Exterior painting to new build<br>in Westmere</p>
+          </div>
+
+          <div class="timeline-item right">
+            <img src="Project-Images/roseton.png" alt="Roseton">
+            <h3>Roseton</h3>
+            <p class="text-mobile-view">Door re-paints done on a vintage 1980's<br> build in Roseton</p>
+          </div>
+          <div class="individual-text-box-right">
+            <p>Door re-paints done on a vintage 1980's<br>build in Roseton</p>
+          </div>
+
+          <div class="timeline-item left">
+            <img src="Project-Images/herne-bay.png" alt="Herne Bay">
+            <h3>Herne Bay</h3>
+            <p class="text-mobile-view">Interior painting done on appartments in <br>Herne Bay flats</p>
+          </div>
+          <div class="individual-text-box-left">
+            <p>Interior painting done on appartments in<br>Herne Bay flats</p>
+          </div>
+
+          <div class="timeline-item right">
+            <img src="Project-Images/remuera.png" alt="Remuera">
+            <h3>Remuera</h3>
+            <p class="text-mobile-view">Exterior painting to new build in Westmere</p>
+          </div>
+          <div class="individual-text-box-right">
+            <p>Fresh paint done on new build<br>in Remuera</p>
+          </div>
+        </div>
+
+        <button onclick="window.location.href='testimonials.html';" class="testimonials-btn">
+          More Projects
+        </button>
+      </div>
+    </section>
+    
+
+
+    <section id="statistics">
+      <div class="details">
+          <div class="stats-container">
+              <div class="stat-box">
+                <h3 class="stat-title">Year<br>Established</h3>
+                <p class="stat-number">2003</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="stat-title">Skilled<br>Painters</h3>
+                <p class="stat-number">10+</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="stat-title">Completed<br>Projects</h3>
+                <p class="stat-number">700</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+    <section id="Reviews">
+      <div class="title-container">
+        <h3 class="reviews-title">From Our Satisfied Clients</h3>
+      </div>
+      <div class="reviews-container">
+        <div class="individual-review">
+          <p class="review-text">G&L Painting transformed our home! The team was professional, meticulous, and the final result exceeded our expectations. Our neighbors keep commenting on how fresh and vibrant our house looks now. Highly recommend their services!</p>
+          <p class="review-author">- Bass Co.</p>
+        </div>
+        <div class="individual-review">
+          <p class="review-text">We hired G&L Painting for a commercial project, and they were fantastic. They completed the job on time, within budget, and with minimal disruption to our business. The quality of their work speaks for itself, and it has definitely enhanced our building's appeal.</p>
+          <p class="review-author">- Milcheur Law</p>
+        </div>
+        <div class="individual-review call-to-action-review">
+          <p class="review-text">Want to see your space revitalized with a fresh coat of paint and a touch of expertise? G&L Painting delivers exceptional results and a commitment to customer satisfaction that truly shines.</p>
+          <p class="review-author">- Studio Rallia</p>
+        </div>
+      </div>
+</section>
+
+
+    
+
+
+    
+    <!--Contact page-->
+   <section id="contact">
+      <div class="contact-container">
+          <h2 class="contact-heading">Looking for expert painters?</h2>
+          <p class="sub-heading">Get in touch for a free consultation</p>
+      </div>
+
+      <!-- Wrap these two in a flex container -->
+      <div class="contact-flex-wrapper">
+        <div class="form-container"> 
+          <form class="floating-form" action="https://formspree.io/f/xzzrwwjw" method="POST">
+            <h2>Contact Us</h2>
+            <input type="text" name="name" required placeholder="Name">
+            <input type="email" name="email" required placeholder="Email Address">
+            <input type="tel" name="phone" required placeholder="Phone Number">
+            <input type="company" name="company name" required placeholder="Company Name">
+            <select name="service" required>
+              <option value="" disabled selected>Select a Service</option>
+              <option value="Interior Painting">Interior Painting</option>
+              <option value="Exterior Painting">Exterior Painting</option>
+              <option value="Roof Painting">Roof Painting</option>
+              <option value="Plastering">Plastering</option>
+              <option value="Gib Fixing">Gib Fixing</option>
+            </select>
+            <textarea name="message" required placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="contact-section-details">
+          <div class="contact-item">
+            <h3><strong>Phone</strong></h3>
+            <p class="contact-text">021 198 9898</p>
+          </div>
+          <div class="contact-item">
+            <h3><strong>Email</strong></h3>
+            <p class="contact-text">glpaintingltd@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <h3><strong>Hours</strong></h3>
+            <p class="contact-text">Monday - Saturday</p>
+            <p class="contact-text">9:00 am to 5:00 pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+        <ul class="footer-nav-links">
+            <li><a href="#navigation">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <section id="socials">
+            <img src="./assets/mail.png" alt="Gmail" class="social-logo">
+            <img src="./assets/phone.png" alt="Gmail" class="social-logo">
+            <p>
+                Copyright &#169; 2025 G&L Painting NZ. All Rights Reserved. 
+            </p>
+        </section>
+    </footer>
+    <script src="glpainting.js"></script>
+</body>
+</html>

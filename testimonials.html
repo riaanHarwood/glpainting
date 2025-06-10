@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&L Auckland Residential Painting</title>
+    <link rel="stylesheet" href="glpainting.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <section id="navigation">
+        <header>
+            <nav id="desktop-nav">
+                <div class="nav-container">
+                    <a href="index.html#projects" class="mobile-back-button">
+                        <img src="./assets/back-button.png" alt="Back Button" />
+                    </a>
+                    <img src="./assets/gl-painting-2.png" alt="Logo" class="logo" onclick="window.location.href='index.html';">
+                    <ul class="nav-links">
+                        <!-- Link to sections by their IDs -->
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <div class="coming-soon">
+        <p>More Projects Coming Soon</p>
+    </div>
+    <script src="glpainting.js"></script>
+    
+    <style>
+        body {
+            background-image: url('assets/city-background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            backdrop-filter: blur(3px); /* This adds the blur effect */
+            -webkit-backdrop-filter: blur(3px); 
+        }
+        .mobile-back-button {
+            position: absolute;
+            left: 40px;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 40px;
+        }
+
+        .mobile-back-button img {
+            width: 100%;
+            height: auto;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin-top: 60px; 
+            padding: 0;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+        }
+        .coming-soon {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+
+        @media (max-width: 600px) {
+            .nav-links {
+                display: none;
+            }
+
+            .logo{
+                height: 200px;
+                width: 200px;
+                top: 60px;
+            }
+            .mobile-back-button {
+                display: block;
+                margin: 15px;
+                width: 40px; /* Adjust size as needed */
+                height: auto;
+                left: 10px; 
+            }
+
+            .mobile-back-button img {
+                margin-top: 25px;
+                width: 100%;
+                height: auto;
+            }
+            .coming-soon {
+                align-items: center;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                padding: 0 10px;
+            }
+            .coming-soon p {
+                font-size: 2.5rem; /* You can go larger if needed */
+            }
+        }
+    </style>
+
+    <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <style>
+        .hamburger {
+            top: 50px;
+            color: black;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
