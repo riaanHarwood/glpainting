@@ -227,6 +227,20 @@
         transform: none;
     }
 
+
+    /*larger screens*/
+    @media (min-width: 768px) {
+        .services-grid {
+            gap: 40px;
+        }
+        }
+
+        /* Large screens */
+    @media (min-width: 1200px) {
+        .services-grid {
+            gap: 60px;
+        }
+    }
 }
 
 
