@@ -324,13 +324,24 @@ h1 {
 }
 
 
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto; /* Optional: maintain horizontal scroll on smaller screens */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+
 .services-grid {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to next line */
-    gap: 15px;
-    overflow-x: auto; /* Enable horizontal scroll if needed */
-    padding: 10px;
-    scroll-snap-type: x mandatory; /* Optional: snapping effect */
+    gap: 5px;
+    flex-wrap: wrap; /* Allow cards to wrap instead of scroll */
+    justify-content: center; /* This centers all cards inside */
+    max-width: 1400px;
+    width: 100%;
 }
 
 
